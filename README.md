@@ -62,6 +62,6 @@ Run `npm run test:firefoxAll` or `npm run test:chromeALl` to run a respective Br
 1. Run `npm run cy:open` to open the Cypress App;
 2. Select E2E Testing;
 3. Select one of the available browsers (e.g., Firefox), and click the Start button;
-4. **Run the [`ui.spec.cy.js`](./cypress/e2e/ui-tests/ui.spec.cy.js) test;**
+4. **Run the [`ui.spec.cy.js`](cypress/e2e/ui-tests/ui-elements.spec.cy.js) test;**
 5. Finally, click on the test file you want to run and wait for it to finish.
 
