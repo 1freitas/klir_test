@@ -1,0 +1,44 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "name": "Las Vegas Water",
+      "employees": 3200,
+      "contactInfo": {
+        "name": "Luke Skywalker",
+        "email": "luke@lasvegaswaters.com"
+      },
+      "size": "Medium"
+    },
+    {
+      "id": 4,
+      "name": "New York's Water",
+      "employees": 9053,
+      "contactInfo": {
+        "name" : "",
+        "email": "leiaskywalker@newyorkwaters.com"
+      },
+      "size": "Big"
+    },
+    {
+      "id": 6,
+      "name": "Chicago's Water",
+      "employees": 1107,
+      "contactInfo": {
+        "name": "Qui-Gon Jinn",
+        "email": "quigon@chicagowaters.com"
+      },
+      "size": "Small"
+    },
+    {
+      "id": 7,
+      "name": "Denver's Water",
+      "employees": 1507,
+      "contactInfo":{
+        "name": "",
+        "email": ""
+      },
+      "size": "Small"
+    }
+  ]
+}

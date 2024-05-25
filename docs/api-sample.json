@@ -1,0 +1,88 @@
+{
+  "name":"<name of the user>",
+  "timestamp":"<timestamp of the request>",
+  "customers":[
+      {
+          "id":<customer's id>,
+          "name":"<customer's name>",
+          "employees":<customer's number of employees>,
+          "contactInfo":
+          {
+              "name":"<contact person's name>",
+              "email":"<contact person's email>"
+          },
+          "size":"<company size>"
+      }
+  ]
+}
+{
+  "name": "Las Vegas Water",
+  "timestamp": "Wed May 22 2024",
+  "customers": [
+    {
+      "id": 1,
+      "name": "Las Vegas Water",
+      "employees": 3200,
+      "contactInfo": {
+        "name": "Luke Skywalker",
+        "email": "luke@lasvegaswaters.com"
+      },
+      "size": "Big"
+    },
+    {
+      "id": 2,
+      "name": "Los Angels Water",
+      "employees": 5050,
+      "contactInfo": {
+        "name": "Anakin Skywalker",
+        "email": "anakin@losangelswaters.com"
+      },
+      "size": "Big"
+    },
+    {
+      "id": 3,
+      "name": "San Francisco's Water",
+      "employees": 40,
+      "contactInfo": {
+        "name": "Han Solo",
+        "email": "hansolo@sanfranciscowaters.com"
+      },
+      "size": "Small"
+    },
+    {
+      "id": 4,
+      "name": "New York's Water",
+      "employees": 9053,
+      "contactInfo": {
+        "email": "leiaskywalker@newyorkwaters.com"
+      },
+      "size": "Big"
+    },
+    {
+      "id": 5,
+      "name": "Miami's Water",
+      "employees": 2450,
+      "contactInfo": {
+        "name": "Mace Windu",
+        "email": "macewindu@miamiwaters.com"
+      },
+      "size": "Small"
+    },
+    {
+      "id": 6,
+      "name": "Chicago's Water",
+      "employees": 1107,
+      "contactInfo": {
+        "name": "Qui-Gon Jinn",
+        "email": "quigon@chicagowaters.com"
+      },
+      "size": "Small"
+    },
+    {
+      "id": 7,
+      "name": "Denver's Water",
+      "employees": 1507,
+      "size": "Small"
+    }
+  ]
+}

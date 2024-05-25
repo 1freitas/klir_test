@@ -1,0 +1,26 @@
+{
+  "name": "klir-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sample.cy.js",
+  "scripts": {
+    "lint": "eslint",
+    "fixAll": "eslint --fix",
+    "test:allFirefox": "cypress run --env version=\"local\" --browser firefox",
+    "test:allChrome": "cypress run --env version=\"local\" --browser chrome",
+    "test:api": "cypress run --env version=\"local\" --spec cypress/api-tests/api-customers.spec.cy.js",
+    "test": "cypress run --env version=\"local\" --browser firefox",
+    "test:stg": "cypress run --env version=\"staging\" --browser firefox"
+  },
+  "author": "Luana Lima de Freitas",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.1.0",
+    "@testing-library/cypress": "^10.0.1",
+    "cypress": "^13.10.0",
+    "eslint": "^9.3.0",
+    "eslint-plugin-cypress": "^3.2.0",
+    "eslint-plugin-mocha": "^10.4.3"
+  }
+}

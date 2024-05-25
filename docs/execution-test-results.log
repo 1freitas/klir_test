@@ -1,0 +1,1403 @@
+
+> klir-challenge@1.0.0 test
+> cypress run --env version="local" --browser firefox
+
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        13.10.0                                                                        │
+  │ Browser:        Firefox 115 (headless)                                                         │
+  │ Node Version:   v21.6.0 (/home/luana.freitas/.nvm/versions/node/v21.6.0/bin/node)              │
+  │ Specs:          5 found (api-tests/api-customers.spec.cy.js, e2e/ui-tests/customers-fixture.sp │
+  │                 ec.cy.js, e2e/ui-tests/customers-random.spec.cy.js, e2e/ui-tests/responsive-sc │
+  │                 reens.spec.cy.js, e2e/ui-tests/ui-elements.spec.cy.js)                         │
+  │ Searched:       cypress/**/**/*cy.js                                                           │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  api-tests/api-customers.spec.cy.js                                              (1 of 5)
+
+
+  Test Suite - Verification API
+    ✓ Basic Checking - Listing Customers (106ms)
+    1) Size Checking - Listing Customers
+    ✓ Fails with 404 (Not Found) status code when url does not exist (136ms)
+    2) POST body.name is string?
+
+
+  2 passing (985ms)
+  2 failing
+
+  1) Test Suite - Verification API
+       Size Checking - Listing Customers:
+
+      AssertionError: expected 'Medium' to equal 'Big'
+      + expected - actual
+
+      -'Medium'
+      +'Big'
+      
+      at  (webpack://klir-challenge/./cypress/api-tests/api-customers.spec.cy.js:36:39)
+      at  (webpack://klir-challenge/./cypress/api-tests/api-customers.spec.cy.js:27:18)
+      at getRet (http://localhost:3000/__cypress/runner/cypress_runner.js:118808:20)
+      at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:1807:23)
+      at __webpack_modules__</module.exports/Promise.try (http://localhost:3000/__cypress/runner/cypress_runner.js:4315:29)
+      at thenFn (http://localhost:3000/__cypress/runner/cypress_runner.js:118819:60)
+      at then (http://localhost:3000/__cypress/runner/cypress_runner.js:119070:21)
+      at wrapped (http://localhost:3000/__cypress/runner/cypress_runner.js:138021:19)
+      at __webpack_modules__</runCommand (http://localhost:3000/__cypress/runner/cypress_runner.js:143935:15)
+      at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:1807:23)
+      at __webpack_modules__</module.exports/Promise.prototype._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:1519:31)
+      at __webpack_modules__</module.exports/Promise.prototype._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:1576:18)
+      at __webpack_modules__</module.exports/Promise.prototype._settlePromiseCtx (http://localhost:3000/__cypress/runner/cypress_runner.js:1613:10)
+      at _drainQueueStep (http://localhost:3000/__cypress/runner/cypress_runner.js:2411:12)
+      at _drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:2400:24)
+      at __webpack_modules__</Async.prototype._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:2416:16)
+      at __webpack_modules__</Async/this.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:2286:14)
+
+  2) Test Suite - Verification API
+       POST body.name is string?:
+
+      AssertionError: expected 200 to be one of [ 400, 401, 402, 403, 404 ]
+      + expected - actual
+
+      -200
+      +[ 400, 401, 402, 403, 404 ]
+      
+      at  (webpack://klir-challenge/./cypress/api-tests/api-customers.spec.cy.js:57:29)
+      at __webpack_modules__</__WEBPACK_DEFAULT_EXPORT__/shouldFnWithCallback (http://localhost:3000/__cypress/runner/cypress_runner.js:118231:17)
+      at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:1807:23)
+      at __webpack_modules__</module.exports/Promise.try (http://localhost:3000/__cypress/runner/cypress_runner.js:4315:29)
+      at shouldFnWithCallback (http://localhost:3000/__cypress/runner/cypress_runner.js:118228:60)
+      at shouldFn (http://localhost:3000/__cypress/runner/cypress_runner.js:118271:37)
+      at should (http://localhost:3000/__cypress/runner/cypress_runner.js:118390:23)
+      at wrapped (http://localhost:3000/__cypress/runner/cypress_runner.js:138021:19)
+      at __webpack_modules__</runCommand (http://localhost:3000/__cypress/runner/cypress_runner.js:143935:15)
+      at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:1807:23)
+      at __webpack_modules__</module.exports/Promise.prototype._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:1519:31)
+      at __webpack_modules__</module.exports/Promise.prototype._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:1576:18)
+      at __webpack_modules__</module.exports/Promise.prototype._settlePromiseCtx (http://localhost:3000/__cypress/runner/cypress_runner.js:1613:10)
+      at _drainQueueStep (http://localhost:3000/__cypress/runner/cypress_runner.js:2411:12)
+      at _drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:2400:24)
+      at __webpack_modules__</Async.prototype._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:2416:16)
+      at __webpack_modules__</Async/this.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:2286:14)
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        4                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      2                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  2                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     0 seconds                                                                        │
+  │ Spec Ran:     api-tests/api-customers.spec.cy.js                                               │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  /home/luana.freitas/Documentos/p/Klir_interview-master/llf6/cypress/screenshots/     (1280x720)
+     api-tests/api-customers.spec.cy.js/Test Suite - Verification API -- Size Checkin               
+     g - Listing Customers (failed).png                                                             
+  -  /home/luana.freitas/Documentos/p/Klir_interview-master/llf6/cypress/screenshots/     (1280x720)
+     api-tests/api-customers.spec.cy.js/Test Suite - Verification API -- POST body.na               
+     me is string (failed).png                                                                      
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  e2e/ui-tests/customers-fixture.spec.cy.js                                       (2 of 5)
+
+
+  Test suite - Customers Verification using data by fixture
+    1) Verification in Customer List - id: 1 | Customer: Las Vegas Water
+    2) Verifications of Size Requeriments - id: 1 | Customer: Las Vegas Water
+    3) Verifications in Contacts Detail - id: 1 | Customer: Las Vegas Water
+    ✓ Verification in Customer List - id: 4 | Customer: New York's Water (824ms)
+    ✓ Verifications of Size Requeriments - id: 4 | Customer: New York's Water (831ms)
+    4) Verifications in Contacts Detail - id: 4 | Customer: New York's Water
+    ✓ Verification in Customer List - id: 6 | Customer: Chicago's Water (560ms)
+    ✓ Verifications of Size Requeriments - id: 6 | Customer: Chicago's Water (624ms)
+    ✓ Verifications in Contacts Detail - id: 6 | Customer: Chicago's Water (780ms)
+    ✓ Verification in Customer List - id: 7 | Customer: Denver's Water (609ms)
+    ✓ Verifications of Size Requeriments - id: 7 | Customer: Denver's Water (719ms)
+    5) Verifications in Contacts Detail - id: 7 | Customer: Denver's Water
+
+
+  7 passing (23s)
+  5 failing
+
+  1) Test suite - Customers Verification using data by fixture
+       Verification in Customer List - id: 1 | Customer: Las Vegas Water:
+
+      Timed out retrying after 4000ms
+      + expected - actual
+
+      -'Big'
+      +'Medium'
+      
+      at  (webpack://klir-challenge/./cypress/e2e/ui-tests/customers-fixture.spec.cy.js:24:9)
+      at __webpack_modules__</setRunnable/runnable.fn (http://localhost:3000/__cypress/runner/cypress_runner.js:138288:43)
+      at callFn (http://localhost:3000/__cypress/runner/cypress_runner.js:156899:21)
+      at __webpack_modules__</Runnable.prototype.run (http://localhost:3000/__cypress/runner/cypress_runner.js:156886:13)
+      at __webpack_modules__</create/onRunnableRun (http://localhost:3000/__cypress/runner/cypress_runner.js:162810:30)
+      at finallyHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:4072:23)
+      at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:1807:23)
+      at __webpack_modules__</module.exports/Promise.prototype._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:1519:31)
+      at __webpack_modules__</module.exports/Promise.prototype._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:1576:18)
+      at __webpack_modules__</module.exports/Promise.prototype._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:1621:10)
+      at __webpack_modules__</module.exports/Promise.prototype._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:1701:18)
+      at _drainQueueStep (http://localhost:3000/__cypress/runner/cypress_runner.js:2407:12)
+      at _drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:2400:24)
+      at __webpack_modules__</Async.prototype._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:2416:16)
+      at __webpack_modules__</Async/this.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:2286:14)
+
+  2) Test suite - Customers Verification using data by fixture
+       Verifications of Size Requeriments - id: 1 | Customer: Las Vegas Water:
+
+      Timed out retrying after 4000ms
+      + expected - actual
+
+      -'Big'
+      +'Medium'
+      
+      at  (webpack://klir-challenge/./cypress/e2e/ui-tests/customers-fixture.spec.cy.js:41:9)
+      at __webpack_modules__</setRunnable/runnable.fn (http://localhost:3000/__cypress/runner/cypress_runner.js:138288:43)
+      at callFn (http://localhost:3000/__cypress/runner/cypress_runner.js:156899:21)
+      at __webpack_modules__</Runnable.prototype.run (http://localhost:3000/__cypress/runner/cypress_runner.js:156886:13)
+      at __webpack_modules__</create/onRunnableRun (http://localhost:3000/__cypress/runner/cypress_runner.js:162810:30)
+      at finallyHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:4072:23)
+      at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:1807:23)
+      at __webpack_modules__</module.exports/Promise.prototype._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:1519:31)
+      at __webpack_modules__</module.exports/Promise.prototype._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:1576:18)
+      at __webpack_modules__</module.exports/Promise.prototype._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:1621:10)
+      at __webpack_modules__</module.exports/Promise.prototype._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:1701:18)
+      at _drainQueueStep (http://localhost:3000/__cypress/runner/cypress_runner.js:2407:12)
+      at _drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:2400:24)
+      at __webpack_modules__</Async.prototype._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:2416:16)
+      at __webpack_modules__</Async/this.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:2286:14)
+
+  3) Test suite - Customers Verification using data by fixture
+       Verifications in Contacts Detail - id: 1 | Customer: Las Vegas Water:
+     AssertionError: Timed out retrying after 4000ms: Unable to find an element with the text: Medium. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+<html
+  lang="en"
+>
+  <head>
+     
+    
+    
+    <meta
+      charset="utf-8"
+    />
+    
+    
+    <link
+      href="/favicon.ico"
+      rel="shortcut icon"
+    />
+    
+    
+    <meta
+      content="width=device-width, initial-scale=1"
+      name="viewport"
+    />
+    
+    
+    <meta
+      content="#000000"
+      name="theme-color"
+    />
+    
+    
+    
+    
+    <link
+      href="/manifest.json"
+      rel="manifest"
+    />
+    
+    
+    
+    
+    <title>
+      Klir Interview Project
+    </title>
+    
+  
+  </head>
+  
+  
+  <body>
+    
+    
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    
+    
+    <div
+      id="root"
+    >
+      <div>
+        <h1>
+          Welcome to Water Customer App
+        </h1>
+        <div>
+          <div>
+            <p>
+              Hi 
+              <b>
+                Luana Lima de Freitas
+              </b>
+              . It is now 
+              <b>
+                Fri May 24 2024
+              </b>
+               and here is our customer list. Click on each of them to view their contact details.
+            </p>
+            <div>
+              <p>
+                <b>
+                  Customer Details
+                </b>
+              </p>
+              <p>
+                <b>
+                  Name:
+                </b>
+                 
+                Las Vegas Water
+              </p>
+              <p>
+                <b>
+                  # of Employees:
+                </b>
+                 
+                3200
+              </p>
+              <p>
+                <b>
+                  Size:
+                </b>
+                 
+                Big
+              </p>
+              <p>
+                <b>
+                  Contact:
+                </b>
+                 
+                Luke Skywalker
+                 (
+                luke@lasvegaswaters.com
+                )
+              </p>
+              <input
+                type="button"
+                value="Back to the list"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+  
+    
+
+
+  </body>
+</html>
+      at ./cypress/support/commands.js (webpack://klir-challenge/./cypress/support/commands.js:69:33)
+      at __webpack_modules__</addCommand/wrap (http://localhost:3000/__cypress/runner/cypress_runner.js:138013:43)
+      at __webpack_modules__</runCommand (http://localhost:3000/__cypress/runner/cypress_runner.js:143935:15)
+      at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:1807:23)
+      at __webpack_modules__</module.exports/Promise.prototype._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:1519:31)
+      at __webpack_modules__</module.exports/Promise.prototype._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:1576:18)
+      at __webpack_modules__</module.exports/Promise.prototype._settlePromiseCtx (http://localhost:3000/__cypress/runner/cypress_runner.js:1613:10)
+      at _drainQueueStep (http://localhost:3000/__cypress/runner/cypress_runner.js:2411:12)
+      at _drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:2400:24)
+      at __webpack_modules__</Async.prototype._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:2416:16)
+      at __webpack_modules__</Async/this.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:2286:14)
+
+  4) Test suite - Customers Verification using data by fixture
+       Verifications in Contacts Detail - id: 4 | Customer: New York's Water:
+     CypressError: `cy.contains()` cannot be passed an empty string.
+
+https://on.cypress.io/contains
+  at contains (http://localhost:3000/__cypress/runner/cypress_runner.js:131921:68)
+  at cyFn (http://localhost:3000/__cypress/runner/cypress_runner.js:138130:19)
+  From Your Spec Code:
+      at shouldFn (http://localhost:3000/__cypress/runner/cypress_runner.js:118276:18)
+      at should (http://localhost:3000/__cypress/runner/cypress_runner.js:118390:23)
+      at __webpack_modules__</create/injectAssertion (http://localhost:3000/__cypress/runner/cypress_runner.js:142941:39)
+      at assertions (http://localhost:3000/__cypress/runner/cypress_runner.js:143190:16)
+      at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:1807:23)
+      at gotValue (http://localhost:3000/__cypress/runner/cypress_runner.js:6478:18)
+      at gotAccum (http://localhost:3000/__cypress/runner/cypress_runner.js:6465:25)
+      at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:1807:23)
+      at __webpack_modules__</module.exports/Promise.prototype._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:1519:31)
+      at __webpack_modules__</module.exports/Promise.prototype._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:1576:18)
+      at __webpack_modules__</module.exports/Promise.prototype._settlePromiseCtx (http://localhost:3000/__cypress/runner/cypress_runner.js:1613:10)
+      at _drainQueueStep (http://localhost:3000/__cypress/runner/cypress_runner.js:2411:12)
+      at _drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:2400:24)
+      at __webpack_modules__</Async.prototype._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:2416:16)
+      at __webpack_modules__</Async/this.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:2286:14)
+
+  5) Test suite - Customers Verification using data by fixture
+       Verifications in Contacts Detail - id: 7 | Customer: Denver's Water:
+     TypeError: The following error originated from your application code, not from Cypress.
+
+  > this.state.customer.contactInfo is undefined
+
+When Cypress detects uncaught errors originating from your application it will automatically fail the current test.
+
+This behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.
+
+https://on.cypress.io/uncaught-exception-from-application
+  at render (http://localhost:3000/static/js/main.chunk.js:324:1)
+  at finishClassComponent (http://localhost:3000/static/js/0.chunk.js:22107:35)
+  at updateClassComponent (http://localhost:3000/static/js/0.chunk.js:22067:48)
+  at beginWork (http://localhost:3000/static/js/0.chunk.js:23334:20)
+  at callCallback (http://localhost:3000/static/js/0.chunk.js:7352:18)
+  at invokeGuardedCallbackDev (http://localhost:3000/static/js/0.chunk.js:7396:20)
+  at invokeGuardedCallback (http://localhost:3000/static/js/0.chunk.js:7444:35)
+  at beginWork$1 (http://localhost:3000/static/js/0.chunk.js:27215:32)
+  at performUnitOfWork (http://localhost:3000/static/js/0.chunk.js:26339:16)
+  at workLoopSync (http://localhost:3000/static/js/0.chunk.js:26315:26)
+  at performSyncWorkOnRoot (http://localhost:3000/static/js/0.chunk.js:25985:13)
+  at ./node_modules/react-dom/cjs/react-dom.development.js/flushSyncCallbackQueueImpl (http://localhost:3000/static/js/0.chunk.js:16961:28)
+  at unstable_runWithPriority (http://localhost:3000/static/js/0.chunk.js:33173:16)
+  at runWithPriority$1 (http://localhost:3000/static/js/0.chunk.js:16916:14)
+  at flushSyncCallbackQueueImpl (http://localhost:3000/static/js/0.chunk.js:16957:28)
+  at flushSyncCallbackQueue (http://localhost:3000/static/js/0.chunk.js:16947:7)
+  at discreteUpdates$1 (http://localhost:3000/static/js/0.chunk.js:26105:11)
+  at discreteUpdates (http://localhost:3000/static/js/0.chunk.js:7901:16)
+  at dispatchDiscreteEvent (http://localhost:3000/static/js/0.chunk.js:10861:22)
+  at sendEvent (http://localhost:3000/__cypress/runner/cypress_runner.js:142718:32)
+  at sendMouseEvent (http://localhost:3000/__cypress/runner/cypress_runner.js:142069:12)
+  at sendClick (http://localhost:3000/__cypress/runner/cypress_runner.js:142130:12)
+  at _mouseClickEvents (http://localhost:3000/__cypress/runner/cypress_runner.js:142624:28)
+  at click (http://localhost:3000/__cypress/runner/cypress_runner.js:142564:38)
+  at onReady (http://localhost:3000/__cypress/runner/cypress_runner.js:112192:37)
+  at onReady (http://localhost:3000/__cypress/runner/cypress_runner.js:112150:39)
+  at runAllChecks (http://localhost:3000/__cypress/runner/cypress_runner.js:112828:14)
+  at retryActionability (http://localhost:3000/__cypress/runner/cypress_runner.js:112850:16)
+  at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:1807:23)
+  at __webpack_modules__</module.exports/Promise.try (http://localhost:3000/__cypress/runner/cypress_runner.js:4315:29)
+  at whenStable (http://localhost:3000/__cypress/runner/cypress_runner.js:143666:62)
+  at __webpack_modules__</create/retry (http://localhost:3000/__cypress/runner/cypress_runner.js:143607:14)
+  at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:1807:23)
+  at __webpack_modules__</module.exports/Promise.prototype._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:1519:31)
+  at __webpack_modules__</module.exports/Promise.prototype._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:1576:18)
+  at __webpack_modules__</module.exports/Promise.prototype._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:1621:10)
+  at __webpack_modules__</module.exports/Promise.prototype._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:1701:18)
+  at __webpack_modules__</module.exports/Promise.prototype._fulfill (http://localhost:3000/__cypress/runner/cypress_runner.js:1645:18)
+  at __webpack_modules__</module.exports/Promise.delay/handle< (http://localhost:3000/__cypress/runner/cypress_runner.js:5450:46)
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        12                                                                               │
+  │ Passing:      7                                                                                │
+  │ Failing:      5                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  5                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     22 seconds                                                                       │
+  │ Spec Ran:     e2e/ui-tests/customers-fixture.spec.cy.js                                        │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  /home/luana.freitas/Documentos/p/Klir_interview-master/llf6/cypress/screenshots/     (1280x720)
+     e2e/ui-tests/customers-fixture.spec.cy.js/Test suite - Customers Verification us               
+     ing data by fixture -- Verification in Customer List - id 1  Customer Las Vegas                
+     Water (failed).png                                                                             
+  -  /home/luana.freitas/Documentos/p/Klir_interview-master/llf6/cypress/screenshots/     (1280x720)
+     e2e/ui-tests/customers-fixture.spec.cy.js/Test suite - Customers Verification us               
+     ing data by fixture -- Verifications of Size Requeriments - id 1  Customer Las V               
+     egas Water (failed).png                                                                        
+  -  /home/luana.freitas/Documentos/p/Klir_interview-master/llf6/cypress/screenshots/     (1280x720)
+     e2e/ui-tests/customers-fixture.spec.cy.js/Test suite - Customers Verification us               
+     ing data by fixture -- Verifications in Contacts Detail - id 1  Customer Las Veg               
+     as Water (failed).png                                                                          
+  -  /home/luana.freitas/Documentos/p/Klir_interview-master/llf6/cypress/screenshots/     (1280x720)
+     e2e/ui-tests/customers-fixture.spec.cy.js/Test suite - Customers Verification us               
+     ing data by fixture -- Verifications in Contacts Detail - id 4  Customer New Yor               
+     k's Water (failed).png                                                                         
+  -  /home/luana.freitas/Documentos/p/Klir_interview-master/llf6/cypress/screenshots/     (1280x720)
+     e2e/ui-tests/customers-fixture.spec.cy.js/Test suite - Customers Verification us               
+     ing data by fixture -- Verifications in Contacts Detail - id 7  Customer Denver'               
+     s Water (failed).png                                                                           
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  e2e/ui-tests/customers-random.spec.cy.js                                        (3 of 5)
+
+
+  Test suite - Select random Customers to verification
+    Verification in Welcome Screen
+      ✓ Submit with blank text in Name (584ms)
+      ✓ Submit without text  (238ms)
+    Verification in Others Screens
+      ✓ Verifications in List Screen (628ms)
+      ✓ Verifications in Contacts Detail Screen (756ms)
+      ✓ Verifications in Contacts Detail Screen (780ms)
+      ✓ Verifications in Contacts Detail Screen (874ms)
+      ✓ Verifications in Contacts Detail Screen (765ms)
+      ✓ Verifications in Contacts Detail Screen (747ms)
+
+
+  8 passing (6s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        8                                                                                │
+  │ Passing:      8                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     5 seconds                                                                        │
+  │ Spec Ran:     e2e/ui-tests/customers-random.spec.cy.js                                         │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  e2e/ui-tests/responsive-screens.spec.cy.js                                      (4 of 5)
+
+
+  Suite of Test that check on screen responsiveness
+    ✓ Using a diferente viewport macbook-15 (1295ms)
+    ✓ Using a diferente viewport macbook-13 (920ms)
+    1) Using a diferente viewport macbook-11
+    ✓ Using a diferente viewport ipad-2 (958ms)
+    ✓ Using a diferente viewport ipad-mini (1047ms)
+    2) Using a diferente viewport iphone-6+
+    3) Using a diferente viewport iphone-6
+    4) Using a diferente viewport iphone-5
+    ✓ Using a diferente viewport iphone-4 (880ms)
+    5) Using a diferente viewport iphone-3
+
+
+  5 passing (22s)
+  5 failing
+
+  1) Suite of Test that check on screen responsiveness
+       Using a diferente viewport macbook-11:
+     CypressError: `cy.contains()` can only accept a string, number or regular expression.
+
+https://on.cypress.io/contains
+  at contains (http://localhost:3000/__cypress/runner/cypress_runner.js:131918:68)
+  at cyFn (http://localhost:3000/__cypress/runner/cypress_runner.js:138130:19)
+  From Your Spec Code:
+      at shouldFn (http://localhost:3000/__cypress/runner/cypress_runner.js:118276:18)
+      at should (http://localhost:3000/__cypress/runner/cypress_runner.js:118390:23)
+      at __webpack_modules__</create/injectAssertion (http://localhost:3000/__cypress/runner/cypress_runner.js:142941:39)
+      at assertions (http://localhost:3000/__cypress/runner/cypress_runner.js:143190:16)
+      at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:1807:23)
+      at gotValue (http://localhost:3000/__cypress/runner/cypress_runner.js:6478:18)
+      at gotAccum (http://localhost:3000/__cypress/runner/cypress_runner.js:6465:25)
+      at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:1807:23)
+      at __webpack_modules__</module.exports/Promise.prototype._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:1519:31)
+      at __webpack_modules__</module.exports/Promise.prototype._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:1576:18)
+      at __webpack_modules__</module.exports/Promise.prototype._settlePromiseCtx (http://localhost:3000/__cypress/runner/cypress_runner.js:1613:10)
+      at _drainQueueStep (http://localhost:3000/__cypress/runner/cypress_runner.js:2411:12)
+      at _drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:2400:24)
+      at __webpack_modules__</Async.prototype._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:2416:16)
+      at __webpack_modules__</Async/this.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:2286:14)
+
+  2) Suite of Test that check on screen responsiveness
+       Using a diferente viewport iphone-6+:
+     AssertionError: Timed out retrying after 4000ms: Found multiple elements with the text: Small
+
+Here are the matching elements:
+
+Ignored nodes: comments, script, style
+<td>
+  Small
+</td>
+
+Ignored nodes: comments, script, style
+<td>
+  Small
+</td>
+
+Ignored nodes: comments, script, style
+<td>
+  Small
+</td>
+
+Ignored nodes: comments, script, style
+<td>
+  Small
+</td>
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+Ignored nodes: comments, script, style
+<html
+  lang="en"
+>
+  <head>
+     
+    
+    
+    <meta
+      charset="utf-8"
+    />
+    
+    
+    <link
+      href="/favicon.ico"
+      rel="shortcut icon"
+    />
+    
+    
+    <meta
+      content="width=device-width, initial-scale=1"
+      name="viewport"
+    />
+    
+    
+    <meta
+      content="#000000"
+      name="theme-color"
+    />
+    
+    
+    
+    
+    <link
+      href="/manifest.json"
+      rel="manifest"
+    />
+    
+    
+    
+    
+    <title>
+      Klir Interview Project
+    </title>
+    
+  
+  </head>
+  
+  
+  <body>
+    
+    
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    
+    
+    <div
+      id="root"
+    >
+      <div>
+        <h1>
+          Welcome to Water Customer App
+        </h1>
+        <div>
+          <div>
+            <p>
+              Hi 
+              <b>
+                Luana Lima de Freitas
+              </b>
+              . It is now 
+              <b>
+                Fri May 24 2024
+              </b>
+               and here is our customer list. Click on each of them to view their contact details.
+            </p>
+            <div>
+              <table>
+                <thead>
+                  <tr>
+                    <th>
+                      Name
+                    </th>
+                    <th>
+                      # of Employees
+                    </th>
+                    <th>
+                      Size
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <a
+                        href="#"
+                      >
+                        Las Vegas Water
+                      </a>
+                    </td>
+                    <td>
+                      3200
+                    </td>
+                    <td>
+                      Big
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="#"
+                      >
+                        Los Angels Water
+                      </a>
+                    </td>
+                    <td>
+                      5050
+                    </td>
+                    <td>
+                      Big
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="#"
+                      >
+                        San Francisco's Water
+                      </a>
+                    </td>
+                    <td>
+                      40
+                    </td>
+                    <td>
+                      Small
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="#"
+                      >
+                        New York's Water
+                      </a>
+                    </td>
+                    <td>
+                      9053
+                    </td>
+                    <td>
+                      Big
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="#"
+                      >
+                        Miami's Water
+                      </a>
+                    </td>
+                    <td>
+                      2450
+                    </td>
+                    <td>
+                      Small
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="#"
+                      >
+                        Chicago's Water
+                      </a>
+                    </td>
+                    <td>
+                      1107
+                    </td>
+                    <td>
+                      Small
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="#"
+                      >
+                        Denver's Water
+                      </a>
+                    </td>
+                    <td>
+                      1507
+                    </td>
+                    <td>
+                      Small
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+  
+    
+
+
+  </body>
+</html>
+      at ./cypress/support/commands.js (webpack://klir-challenge/./cypress/support/commands.js:69:33)
+      at __webpack_modules__</addCommand/wrap (http://localhost:3000/__cypress/runner/cypress_runner.js:138013:43)
+      at __webpack_modules__</runCommand (http://localhost:3000/__cypress/runner/cypress_runner.js:143935:15)
+      at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:1807:23)
+      at __webpack_modules__</module.exports/Promise.prototype._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:1519:31)
+      at __webpack_modules__</module.exports/Promise.prototype._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:1576:18)
+      at __webpack_modules__</module.exports/Promise.prototype._settlePromiseCtx (http://localhost:3000/__cypress/runner/cypress_runner.js:1613:10)
+      at _drainQueueStep (http://localhost:3000/__cypress/runner/cypress_runner.js:2411:12)
+      at _drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:2400:24)
+      at __webpack_modules__</Async.prototype._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:2416:16)
+      at __webpack_modules__</Async/this.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:2286:14)
+
+  3) Suite of Test that check on screen responsiveness
+       Using a diferente viewport iphone-6:
+     TypeError: customer.contactInfo is undefined
+  at ./cypress/support/commands.js (webpack://klir-challenge/./cypress/support/commands.js:62:6)
+  at __webpack_modules__</addCommand/wrap (http://localhost:3000/__cypress/runner/cypress_runner.js:138013:43)
+  at __webpack_modules__</runCommand (http://localhost:3000/__cypress/runner/cypress_runner.js:143935:15)
+  at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:1807:23)
+  at __webpack_modules__</module.exports/Promise.prototype._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:1519:31)
+  at __webpack_modules__</module.exports/Promise.prototype._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:1576:18)
+  at __webpack_modules__</module.exports/Promise.prototype._settlePromiseCtx (http://localhost:3000/__cypress/runner/cypress_runner.js:1613:10)
+  at _drainQueueStep (http://localhost:3000/__cypress/runner/cypress_runner.js:2411:12)
+  at _drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:2400:24)
+  at __webpack_modules__</Async.prototype._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:2416:16)
+  at __webpack_modules__</Async/this.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:2286:14)
+
+  4) Suite of Test that check on screen responsiveness
+       Using a diferente viewport iphone-5:
+     AssertionError: Timed out retrying after 4000ms: Found multiple elements with the text: Big
+
+Here are the matching elements:
+
+Ignored nodes: comments, script, style
+<td>
+  Big
+</td>
+
+Ignored nodes: comments, script, style
+<td>
+  Big
+</td>
+
+Ignored nodes: comments, script, style
+<td>
+  Big
+</td>
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+Ignored nodes: comments, script, style
+<html
+  lang="en"
+>
+  <head>
+     
+    
+    
+    <meta
+      charset="utf-8"
+    />
+    
+    
+    <link
+      href="/favicon.ico"
+      rel="shortcut icon"
+    />
+    
+    
+    <meta
+      content="width=device-width, initial-scale=1"
+      name="viewport"
+    />
+    
+    
+    <meta
+      content="#000000"
+      name="theme-color"
+    />
+    
+    
+    
+    
+    <link
+      href="/manifest.json"
+      rel="manifest"
+    />
+    
+    
+    
+    
+    <title>
+      Klir Interview Project
+    </title>
+    
+  
+  </head>
+  
+  
+  <body>
+    
+    
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    
+    
+    <div
+      id="root"
+    >
+      <div>
+        <h1>
+          Welcome to Water Customer App
+        </h1>
+        <div>
+          <div>
+            <p>
+              Hi 
+              <b>
+                Generic Acess
+              </b>
+              . It is now 
+              <b>
+                Fri May 24 2024
+              </b>
+               and here is our customer list. Click on each of them to view their contact details.
+            </p>
+            <div>
+              <table>
+                <thead>
+                  <tr>
+                    <th>
+                      Name
+                    </th>
+                    <th>
+                      # of Employees
+                    </th>
+                    <th>
+                      Size
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <a
+                        href="#"
+                      >
+                        Las Vegas Water
+                      </a>
+                    </td>
+                    <td>
+                      3200
+                    </td>
+                    <td>
+                      Big
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="#"
+                      >
+                        Los Angels Water
+                      </a>
+                    </td>
+                    <td>
+                      5050
+                    </td>
+                    <td>
+                      Big
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="#"
+                      >
+                        San Francisco's Water
+                      </a>
+                    </td>
+                    <td>
+                      40
+                    </td>
+                    <td>
+                      Small
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="#"
+                      >
+                        New York's Water
+                      </a>
+                    </td>
+                    <td>
+                      9053
+                    </td>
+                    <td>
+                      Big
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="#"
+                      >
+                        Miami's Water
+                      </a>
+                    </td>
+                    <td>
+                      2450
+                    </td>
+                    <td>
+                      Small
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="#"
+                      >
+                        Chicago's Water
+                      </a>
+                    </td>
+                    <td>
+                      1107
+                    </td>
+                    <td>
+                      Small
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="#"
+                      >
+                        Denver's Water
+                      </a>
+                    </td>
+                    <td>
+                      1507
+                    </td>
+                    <td>
+                      Small
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+  
+    
+
+
+  </body>
+</html>
+      at ./cypress/support/commands.js (webpack://klir-challenge/./cypress/support/commands.js:69:33)
+      at __webpack_modules__</addCommand/wrap (http://localhost:3000/__cypress/runner/cypress_runner.js:138013:43)
+      at __webpack_modules__</runCommand (http://localhost:3000/__cypress/runner/cypress_runner.js:143935:15)
+      at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:1807:23)
+      at __webpack_modules__</module.exports/Promise.prototype._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:1519:31)
+      at __webpack_modules__</module.exports/Promise.prototype._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:1576:18)
+      at __webpack_modules__</module.exports/Promise.prototype._settlePromiseCtx (http://localhost:3000/__cypress/runner/cypress_runner.js:1613:10)
+      at _drainQueueStep (http://localhost:3000/__cypress/runner/cypress_runner.js:2411:12)
+      at _drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:2400:24)
+      at __webpack_modules__</Async.prototype._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:2416:16)
+      at __webpack_modules__</Async/this.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:2286:14)
+
+  5) Suite of Test that check on screen responsiveness
+       Using a diferente viewport iphone-3:
+     AssertionError: Timed out retrying after 4000ms: Found multiple elements with the text: Small
+
+Here are the matching elements:
+
+Ignored nodes: comments, script, style
+<td>
+  Small
+</td>
+
+Ignored nodes: comments, script, style
+<td>
+  Small
+</td>
+
+Ignored nodes: comments, script, style
+<td>
+  Small
+</td>
+
+Ignored nodes: comments, script, style
+<td>
+  Small
+</td>
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+Ignored nodes: comments, script, style
+<html
+  lang="en"
+>
+  <head>
+     
+    
+    
+    <meta
+      charset="utf-8"
+    />
+    
+    
+    <link
+      href="/favicon.ico"
+      rel="shortcut icon"
+    />
+    
+    
+    <meta
+      content="width=device-width, initial-scale=1"
+      name="viewport"
+    />
+    
+    
+    <meta
+      content="#000000"
+      name="theme-color"
+    />
+    
+    
+    
+    
+    <link
+      href="/manifest.json"
+      rel="manifest"
+    />
+    
+    
+    
+    
+    <title>
+      Klir Interview Project
+    </title>
+    
+  
+  </head>
+  
+  
+  <body>
+    
+    
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    
+    
+    <div
+      id="root"
+    >
+      <div>
+        <h1>
+          Welcome to Water Customer App
+        </h1>
+        <div>
+          <div>
+            <p>
+              Hi 
+              <b>
+                Luana Lima de Freitas
+              </b>
+              . It is now 
+              <b>
+                Fri May 24 2024
+              </b>
+               and here is our customer list. Click on each of them to view their contact details.
+            </p>
+            <div>
+              <table>
+                <thead>
+                  <tr>
+                    <th>
+                      Name
+                    </th>
+                    <th>
+                      # of Employees
+                    </th>
+                    <th>
+                      Size
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <a
+                        href="#"
+                      >
+                        Las Vegas Water
+                      </a>
+                    </td>
+                    <td>
+                      3200
+                    </td>
+                    <td>
+                      Big
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="#"
+                      >
+                        Los Angels Water
+                      </a>
+                    </td>
+                    <td>
+                      5050
+                    </td>
+                    <td>
+                      Big
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="#"
+                      >
+                        San Francisco's Water
+                      </a>
+                    </td>
+                    <td>
+                      40
+                    </td>
+                    <td>
+                      Small
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="#"
+                      >
+                        New York's Water
+                      </a>
+                    </td>
+                    <td>
+                      9053
+                    </td>
+                    <td>
+                      Big
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="#"
+                      >
+                        Miami's Water
+                      </a>
+                    </td>
+                    <td>
+                      2450
+                    </td>
+                    <td>
+                      Small
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="#"
+                      >
+                        Chicago's Water
+                      </a>
+                    </td>
+                    <td>
+                      1107
+                    </td>
+                    <td>
+                      Small
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="#"
+                      >
+                        Denver's Water
+                      </a>
+                    </td>
+                    <td>
+                      1507
+                    </td>
+                    <td>
+                      Small
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+  
+    
+
+
+  </body>
+</html>
+      at ./cypress/support/commands.js (webpack://klir-challenge/./cypress/support/commands.js:69:33)
+      at __webpack_modules__</addCommand/wrap (http://localhost:3000/__cypress/runner/cypress_runner.js:138013:43)
+      at __webpack_modules__</runCommand (http://localhost:3000/__cypress/runner/cypress_runner.js:143935:15)
+      at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:1807:23)
+      at __webpack_modules__</module.exports/Promise.prototype._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:1519:31)
+      at __webpack_modules__</module.exports/Promise.prototype._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:1576:18)
+      at __webpack_modules__</module.exports/Promise.prototype._settlePromiseCtx (http://localhost:3000/__cypress/runner/cypress_runner.js:1613:10)
+      at _drainQueueStep (http://localhost:3000/__cypress/runner/cypress_runner.js:2411:12)
+      at _drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:2400:24)
+      at __webpack_modules__</Async.prototype._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:2416:16)
+      at __webpack_modules__</Async/this.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:2286:14)
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        10                                                                               │
+  │ Passing:      5                                                                                │
+  │ Failing:      5                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  5                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     22 seconds                                                                       │
+  │ Spec Ran:     e2e/ui-tests/responsive-screens.spec.cy.js                                       │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  /home/luana.freitas/Documentos/p/Klir_interview-master/llf6/cypress/screenshots/     (1280x720)
+     e2e/ui-tests/responsive-screens.spec.cy.js/Suite of Test that check on screen re               
+     sponsiveness -- Using a diferente viewport macbook-11 (failed).png                             
+  -  /home/luana.freitas/Documentos/p/Klir_interview-master/llf6/cypress/screenshots/     (1280x720)
+     e2e/ui-tests/responsive-screens.spec.cy.js/Suite of Test that check on screen re               
+     sponsiveness -- Using a diferente viewport iphone-6+ (failed).png                              
+  -  /home/luana.freitas/Documentos/p/Klir_interview-master/llf6/cypress/screenshots/     (1280x720)
+     e2e/ui-tests/responsive-screens.spec.cy.js/Suite of Test that check on screen re               
+     sponsiveness -- Using a diferente viewport iphone-6 (failed).png                               
+  -  /home/luana.freitas/Documentos/p/Klir_interview-master/llf6/cypress/screenshots/     (1280x720)
+     e2e/ui-tests/responsive-screens.spec.cy.js/Suite of Test that check on screen re               
+     sponsiveness -- Using a diferente viewport iphone-5 (failed).png                               
+  -  /home/luana.freitas/Documentos/p/Klir_interview-master/llf6/cypress/screenshots/     (1280x720)
+     e2e/ui-tests/responsive-screens.spec.cy.js/Suite of Test that check on screen re               
+     sponsiveness -- Using a diferente viewport iphone-3 (failed).png                               
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  e2e/ui-tests/ui-elements.spec.cy.js                                             (5 of 5)
+
+
+  Test suite of user interface
+    Ui elements in Welcome Screen
+      ✓ Titles elements (374ms)
+      ✓ Button and Input Elements (223ms)
+    Ui elements in Others Screens
+      Ui elements in Customer Screen
+        ✓ Title elements (752ms)
+        ✓ Table elements (716ms)
+      Ui elements in Contacts Detail Screen
+        ✓ Title elements (623ms)
+        ✓ Detail List elements (789ms)
+
+
+  6 passing (4s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        6                                                                                │
+  │ Passing:      6                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     3 seconds                                                                        │
+  │ Spec Ran:     e2e/ui-tests/ui-elements.spec.cy.js                                              │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ ✖  api-tests/api-customers.spec.cy.js       927ms        4        2        2        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✖  e2e/ui-tests/customers-fixture.spec      00:22       12        7        5        -        - │
+  │    .cy.js                                                                                      │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  e2e/ui-tests/customers-random.spec.      00:05        8        8        -        -        - │
+  │    cy.js                                                                                       │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✖  e2e/ui-tests/responsive-screens.spe      00:22       10        5        5        -        - │
+  │    c.cy.js                                                                                     │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  e2e/ui-tests/ui-elements.spec.cy.js      00:03        6        6        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ✖  3 of 5 failed (60%)                      00:55       40       28       12        -        -  
+

@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Luana Lima de Freitas",
+      "email": "luanadfreitas@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Automation of test",
+      "email": "qa@gklir.com"
+    },
+    {
+      "id": 3,
+      "name": "Generic Acess",
+      "email": "adm@gmail.com"
+    }
+  ]
+}
