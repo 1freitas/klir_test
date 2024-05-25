@@ -17,6 +17,9 @@ v20.13.1
 Use a easy way to prepare the environment if your SO is GNU/Linux, execute the script scripts/setup-environment-linux.sh.
 
 ## Tests
+
+The details of planning can be seen in [docs/test-plans.md](https://github.com/1freitas/klir_test/blob/main/docs/test-plans.md).
+
 ### Running cypress automation
 
 Afer run the application in [local enviroment](https://github.com/vardhinikumar2023/Klir_interview/blob/master/TestEnvironment.md#how-to-run-it) and wait for the environment to be up and running (this might take a minute or so).
