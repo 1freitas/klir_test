@@ -49,7 +49,9 @@ Use linter to maintein a good pratices to write code with cypress and mocha, run
 
 ### Headless mode
 
-Run `npm run test ` to run all tests in headless mode.
+Run `npm run test:stg ` to run all tests in headless mode in staging configuration.
+
+Run `npm run test` to run all tests in headless mode in local configuration.
 
 Run `npm run test:api` to run only the API tests in headless mode.
 
